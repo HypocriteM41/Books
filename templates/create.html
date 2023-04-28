@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создаем :3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.register2{
+    position: relative;
+    margin-left: 30px;
+    width: 310px;
+}
+.register2 label{
+    position: absolute;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+.register2 input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox2{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+}
+.inputbox2 label{
+    position: absolute;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+.inputbox2 input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom:  solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.button{
+    display: flex;
+    margin-left: 130px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 42px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register p a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.goback{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+.goback p a{
+    margin-right: 0px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.goback p a:hover{
+    text-decoration: underline;
+}
+body {
+   background-color: black;
+   /* Firefox */
+   background-image:
+      -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248,255,128,.5) 4px, transparent 40px),
+      -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255,186,170,.4) 3px, transparent 30px),
+      -moz-radial-gradient(ellipse, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 40px),
+      -moz-radial-gradient(ellipse, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 30px);
+   /* Webkit */
+   background-image:
+      -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
+      -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
+      -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
+      -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
+   /* Background Attributes */
+   background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+   background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   /* Animation */
+   animation-name: movement;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   /* Firefox */
+   -moz-animation-name: movement;
+   -moz-animation-duration: 5s;
+   -moz-animation-timing-function: linear;
+   -moz-animation-iteration-count: infinite;
+   /* Webkit */
+   -webkit-animation-name: movement;
+   -webkit-animation-duration: 5s;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+}
+@keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+@-moz-keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+@-webkit-keyframes movement
+{
+   from {
+         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+   }
+   to {
+         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+   }
+}
+    </style>
+</head>
+<body>
+    <section>
+        <form action="/create/" method="POST">
+            <div class="form-box">
+                <div class="form-value">
+                        <h2>Создание</h2>
+                        <div class="inputbox">
+                            {{ form.name.label }}
+                            {{ form.name }}
+                        </div>
+                        <div class="inputbox">
+                            {{ form.creator.label }}
+                            {{ form.creator }}
+                        </div>
+                        <div class="register2">
+                            {{ form.submit }}
+                        </div>
+                        <div class="goback">
+                            <p><a href="/">На Главную</a></p>
+                        </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
